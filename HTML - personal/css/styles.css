@@ -46,7 +46,59 @@ h3{
   width: 7%;
   background-color: #F5EFE6;
 }
+header{
+  background-color: #55d6aa;
+}
+header::after{
+  content: '';
+  display: table;
+  clear:both;
+}
 
+nav{
+  float: center;
+}
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li{
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+}
+nav a{
+  text-decoration: none;
+  color: #F5EFE6;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+nav a:hover{
+  color: #47B5FF;
+}
+nav a::before{
+  content: '';
+  display:block;
+  height: 5px;
+  width: 100%;
+  background-color: #F5EFE6;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 350ms;
+}
+nav a:hover::before{
+  width:100%;
+}
+.nav_container{
+  width: 80%;
+  margin: 0 auto;
+}
 .top-container{
   background-color: #1A4D2E;
   padding-top: 100px;
